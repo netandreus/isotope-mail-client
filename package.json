@@ -1,0 +1,119 @@
+{
+  "name": "isotope-mail-client",
+  "version": "1.0.0",
+  "description": "Isotope mail client",
+  "main": "index.js",
+  "scripts": {
+    "build": "./node_modules/.bin/webpack -p --mode production",
+    "start": "./node_modules/.bin/webpack-dev-server --config ./webpack.config.js --mode development",
+    "test": "jest --coverage"
+  },
+  "keywords": [],
+  "author": {
+    "name": "Marc Nuri",
+    "url": "https://blog.marcnuri.com"
+  },
+  "license": "Apache-2.0",
+  "licenses": [
+    {
+      "type": "Apache-2.0",
+      "url": "http://www.apache.org/licenses/LICENSE-2.0"
+    }
+  ],
+  "dependencies": {
+    "@tinymce/tinymce-react": "^2.3.0",
+    "abortcontroller-polyfill": "^1.1.9",
+    "babel-polyfill": "^6.26.0",
+    "compression": "^1.7.2",
+    "dompurify": "^1.0.7",
+    "eventsource": "^1.0.7",
+    "history": "^4.7.2",
+    "i18next": "^15.0.4",
+    "i18next-xhr-backend": "^2.0.1",
+    "idb": "^2.1.3",
+    "lodash": "^4.17.15",
+    "prop-types": "^15.6.2",
+    "react": "^16.8.6",
+    "react-autosuggest": "^9.4.3",
+    "react-dom": "^16.8.6",
+    "react-i18next": "^7.11.1",
+    "react-redux": "^5.0.7",
+    "react-router-dom": "^4.3.1",
+    "react-virtualized": "^9.20.1",
+    "redux": "^3.0.0",
+    "reselect": "^4.0.0",
+    "sjcl": "^1.0.7",
+    "whatwg-fetch": "^2.0.4"
+  },
+  "devDependencies": {
+    "@babel/core": "7.3.3",
+    "@babel/plugin-proposal-object-rest-spread": "7.5.5",
+    "@babel/plugin-syntax-dynamic-import": "7.2.0",
+    "@babel/plugin-transform-runtime": "7.5.5",
+    "@babel/preset-env": "7.5.5",
+    "@babel/preset-react": "7.0.0",
+    "@babel/runtime": "7.5.5",
+    "@material/button": "^2.1.1",
+    "@material/card": "^2.1.1",
+    "@material/checkbox": "^2.1.1",
+    "@material/chips": "^2.1.1",
+    "@material/dialog": "^2.1.1",
+    "@material/drawer": "^2.1.1",
+    "@material/fab": "^2.1.1",
+    "@material/form-field": "^2.1.1",
+    "@material/icon-button": "^2.1.1",
+    "@material/line-ripple": "^1.1.0",
+    "@material/list": "^2.1.1",
+    "@material/menu": "^2.1.1",
+    "@material/menu-surface": "^1.1.1",
+    "@material/ripple": "^2.1.1",
+    "@material/shape": "^1.1.1",
+    "@material/snackbar": "^2.1.1",
+    "@material/switch": "^2.1.1",
+    "@material/textfield": "^2.1.1",
+    "@material/top-app-bar": "^2.1.1",
+    "@material/typography": "^1.0.0",
+    "babel-eslint": "^10.0.1",
+    "babel-jest": "^24.1.0",
+    "babel-loader": "^8.0.5",
+    "copy-webpack-plugin": "^5.0.5",
+    "css-loader": "^1.0.0",
+    "enzyme": "^3.9.0",
+    "enzyme-adapter-react-16": "^1.11.2",
+    "enzyme-to-json": "^3.3.5",
+    "eslint": "^5.16.0",
+    "eslint-loader": "^2.1.2",
+    "eslint-plugin-jest": "^22.4.1",
+    "eslint-plugin-react": "^7.12.4",
+    "html-loader": "^0.5.5",
+    "html-webpack-plugin": "^3.2.0",
+    "identity-obj-proxy": "^3.0.0",
+    "jest": "^24.8.0",
+    "mini-css-extract-plugin": "^0.4.1",
+    "node-sass": "^4.12.0",
+    "path": "^0.12.7",
+    "react-hot-loader": "^4.8.4",
+    "regenerator-runtime": "^0.12.1",
+    "sass-loader": "^7.0.3",
+    "style-loader": "^0.21.0",
+    "webpack": "^4.41.2",
+    "webpack-cli": "^3.0.4",
+    "webpack-dev-server": "^3.1.14",
+    "worker-loader": "^2.0.0"
+  },
+  "jest": {
+    "moduleNameMapper": {
+      "\\.(scss|less)$": "identity-obj-proxy",
+      "worker-loader?.*$": "identity-obj-proxy"
+    },
+    "testEnvironmentOptions": {
+      "resources": "usable"
+    },
+    "setupFilesAfterEnv": [
+      "<rootDir>/jest-setup.js"
+    ],
+    "snapshotSerializers": [
+      "enzyme-to-json/serializer"
+    ]
+  }
+}

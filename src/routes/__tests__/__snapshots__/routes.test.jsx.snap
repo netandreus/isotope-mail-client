@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Routes component test suite Snapshot render 1`] = `
+<Switch>
+  <Route
+    exact={true}
+    path="/configuration-not-found"
+    render={[Function]}
+  />
+  <Connect(ApplicationReadyRoute)
+    exact={true}
+    path="/login"
+    render={[Function]}
+  />
+  <Connect(ApplicationReadyRoute)
+    component={[Function]}
+    exact={true}
+    path="/"
+  />
+</Switch>
+`;
